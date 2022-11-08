@@ -1,0 +1,114 @@
+---
+title: "Figure outline / packet"
+subtitle: "Measuring the depth and breadth of Fkh1-FHA-dependent chromatin structure and replication function at replication origins"
+output: 
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: no
+    toc: no
+    keep_tex: yes
+  html_document: default
+date: "2022-11-07"
+geometry:
+  top=10mm,
+  bottom=15mm,
+  left=10mm,
+  right=10mm
+header-includes:
+  \usepackage{float}
+  \floatplacement{figure}{H}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, error = FALSE, fig.align = "center")
+```
+
+```{r include = FALSE}
+library(tidyverse)
+```
+
+# Materials and methods
+
+## SORT-seq
+
+### Cutluring and sorting
+
+Followed protocol as outlined in [@Batakou2020] with slight modifications. Briefly, 30 mL YPD cultures grown to 0.5 ODs/mL at 30°C. Harvested and fixed yeast in 70% EtOH, storing overnight at 4°C. 
+
+### DNA extraction, library prep, and sequencing
+
+### Data processing and analysis
+
+## FKKH1 motif mapping
+
+## MNase-seq
+
+### Benchwork
+
+### DNA extraction, library prep, and sequencing
+
+### Data processing and analysis
+
+
+# Results
+
+## The loss of functional Fkh1FHA impacts replication at up to 25% of yeast origins.
+
+### Figure 1 (establishing the big Q and our SORT-seq experiment)
+
+**Take-home:** *Qualitatively and quantitatively, the loss of a functional Fkh1FHA changes replication dynamics at replication origins and perhaps even at termination events). Thus, more origins than the our original target PC cohort are affected by fkh1-R80A.*
+
+(ref:fig1) \tiny Measuring replication in multiple *FKH1* (3) and *fkh1-R80A* (2) meiotic independents in unperturbed yeast cultures. **A.** S-phase copy numbers as means and 95% confidence intervals measured across chromosome 2 in *FKH1* (black) and *fkh1-R80A* (red) cells. Sites of origins are labeled, with the position of the T-rich start of the ORC site indicated by vertical lines. The a 30 kbp window centered on the centromere is marked by a horizontal line with a central grey dot denoting the centromeric sequence. **B-E.** Smoothed density estimates of *fkh1-R80A* / *FKH1* S-phase copy number ratios for all confirmed origins (n = 392) and then selected cohorts defined by Trep (C - [@Yabuki2002]), ORC-origin binding cohorts (D - [@Hoggard2013]), and *FKH1/2*-regulation (E - [@Knott2012]).  
+
+```{r fig1, out.width="85%", fig.cap = "(ref:fig1)"}
+knitr::include_graphics("./images/Figure_1_v_2022-11-08.pdf")
+```
+
+### Supplemental 1 (all chromosomal scans)
+
+## Figure 2 (CEN sequence and CEN origins are FHA-SORT-dependent / *fkh1-R80A*-SORT-negative)
+
+**Take-home:** *In contrast to a previous study that measured replication through BrdU-chip (Knott et al, 2012), our study suggests that normal replication through yeast centromeres is dependent on a functional Fkh1FHA.*
+
+a)  Example scans \
+b)  Illustration of how CEN ratios were determined. \
+c)  Distribution of CEN ratios for all sixteen cens. 
+
+### Supplemental 2 (all cen scans)
+
+## Figure 3 (FKH1 match frequency by SORT-seq cohorts)
+
+**Take-home:** *In contrast to the PC origins sensitive to fkh1-R80A in the NAR paper, fkh1-R80A-negative / FHA-SORT-dependent origins defined by the SORT-seq are characterized by a FKH1 match that overlaps the ORC binding site*
+
+## Figure 4 (MNase titration reveals global change in accessibility in *fkh1-R80A*)
+
+**Data Tk** May save for reviewers or as a "compromise" for resubmission 
+
+**Thought(s):** *A figure to address the "extent" of chromatin accessibility governed by Fkh1-FHA. If no change between* FKH1\* and *fkh1-R80A*, then we will reserve for supplemental. We will start with asynchronous cells and then move to G1-arrested cells. If chromatin accessibility parallels the MNase-seq data, we may see opposing phenotypes between asynchronous and G1-arrested cells.\* 
+
+## Figure 5 (MNase-seq experiment validation)
+
+**Take-home:** *We present data that suggest the Fkh1-FHA regulates chromatin structure as measured by MNase-seq experiments to such an extent that changes in MNase protection is evidenced for all confirmed origins and is G1-specific.*
+
+a)  heats comparing confirmed to likely origins \
+b)  Quantification of heats \
+c)  Heats by region \
+d)  Quantification of heat regions. 
+
+### Supplemental 3
+
+Comparison of experimental replicates for the two genotypes...
+
+## Figure 6 (MNase-seq experiment with cohorts of interest)
+
+**Take-home:** *As expected, Fkh1-FHA-dependent MNase protection is most evident in G1-phase and at FHA-sort-positive origins relative to FHA-sort-negative origins.*
+
+As in figure 5, but with *fkh1-R80A*-SORT-negative and *fkh1-R80A*-SORT-positive. 
+
+### Supplemental 4
+
+Comparison of experimental replicates for the two genotypes...
+
+## Figure 7 (MNase-seq experiment with single locus plots & FKH1-matches)
+
+**Analysis Tk**
